@@ -1,0 +1,12 @@
+AddHandler fcgid-script .fcgi
+DirectoryIndex index.fcgi
+# MaxRequestsPerChild 1
+SetEnv wsgi_max_requests 1
+
+RewriteEngine On
+# RewriteBase /custom-maps/
+# RewriteRule ^index\.fcgi$ - [L]
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteRule ^(.*)$ index.fcgi/$1 [L]
+RewriteRule ^([a-z0-9]*)/?$ index.fcgi/$1 [L]
