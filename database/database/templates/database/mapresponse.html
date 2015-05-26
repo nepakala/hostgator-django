@@ -3,7 +3,7 @@
 
 {% block content %}
 
-<form action="/custom-maps/mapmaker/" method="POST">
+<form action="/mapmaker/" method="POST">
 {% csrf_token %}
 Map HTML:<br>
 <textarea type="text">{{ newmapstring }}</textarea>

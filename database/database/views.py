@@ -37,11 +37,11 @@ class Mapmaker(View):
 
     def post(self, request, *args, **kwargs):
         # return HttpResponse('Thanks for the data. We might sell it.')
-        locations = readlocations('/home4/newbreed/public_html/tools/custom-maps/database/database/locations.json')
+        locations = readlocations('/home4/newbreed/public_html/tools/database/database/locations.json')
         # return HttpResponse(json.dumps(locations))
         fillLatLon(locations)
-        # writelocations('/home4/newbreed/public_html/tools/custom-maps/database/database/locations.json',locations)
-        rawsvg,rawsvgnocoords = readmaps("/home4/newbreed/public_html/tools/custom-maps/database/database/mapdata/rawsvgmaplatlon","/home4/newbreed/public_html/tools/custom-maps/database/database/mapdata/rawsvgmap")
+        # writelocations('/home4/newbreed/public_html/tools/database/database/locations.json',locations)
+        rawsvg,rawsvgnocoords = readmaps("/home4/newbreed/public_html/tools/database/database/mapdata/rawsvgmaplatlon","/home4/newbreed/public_html/tools/database/database/mapdata/rawsvgmap")
         newmapstring,newhtmlstring = makeMaps(locations,rawsvg,rawsvgnocoords)
         return render(request, 'database/mapresponse.html', Context({"newmapstring": newmapstring, "newhtmlstring": newhtmlstring}))
 

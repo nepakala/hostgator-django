@@ -3,7 +3,7 @@
 
 {% block content %}
 
-<form action="/custom-maps/mapmaker/" method="POST">
+<form action="/mapmaker/" method="POST">
 {% csrf_token %}
 Lat:<br>
 <input type="text" name="lat">
