@@ -4,9 +4,9 @@ DirectoryIndex index.fcgi
 SetEnv wsgi_max_requests 1
 
 RewriteEngine On
-# RewriteBase /custom-maps/
-# RewriteRule ^index\.fcgi$ - [L]
-# RewriteCond %{REQUEST_FILENAME} !-f
-# RewriteCond %{REQUEST_FILENAME} !-d
-# RewriteRule ^(.*)$ index.fcgi/$1 [L]
-RewriteRule ^([a-z/1-9]*)/?$ /custom-maps/index.fcgi/$1 [QSA,NC,L]
+RewriteBase /custom-maps/
+RewriteRule ^index\.fcgi$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.fcgi/$1 [L]
+# RewriteRule ^([a-z/1-9]*)/?$ /custom-maps/index.fcgi/$1 [QSA,NC,L]
