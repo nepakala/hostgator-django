@@ -1,0 +1,92 @@
+[
+    {
+        "latlon": [
+            41.7167495,
+            -75.4921284
+        ],
+        "image": "http://cdn2.hubspot.net/hubfs/415283/map-images/union-dale-pa.jpg",
+        "location": "Union Dale, PA",
+        "name": "THE OAKES FAMILY",
+        "description": "We want to produce as much power as we consume, but we needed to limit the impact an array would have on our property and house. Solar trackers were the logical choice to meet our needs."
+    },
+    {
+        "latlon": [
+            42.4487019,
+            -71.877296
+        ],
+        "image": "http://cdn2.hubspot.net/hubfs/415283/map-images/princeton-ma.jpg",
+        "location": "Princeton, MA",
+        "name": "THE OLSEN FAMILY",
+        "description": "We hoped to have our house to run on 'net zero' energy. Our solar trackers helped us achieve our goal, and now we'll be saving 335 tons of carbon emissions over our system's life."
+    },
+    {
+        "latlon": [
+            46.9086553,
+            -67.8258517
+        ],
+        "image": "http://cdn2.hubspot.net/hubfs/415283/map-images/limestone-me.jpg",
+        "location": "Limestone, ME",
+        "name": "CARL FLORA",
+        "description": "We have all the ingredients we needed for a successful large-scale solar project at the Loring Air Force Base. Our arrays generate enough electricity to power 55 Maine homes and offset 250 tons of carbon annually."
+    },
+    {
+        "latlon": [
+            43.729525,
+            -70.241993
+        ],
+        "image": "http://cdn2.hubspot.net/hubfs/415283/map-images/falmouth-me.jpg",
+        "location": "Falmouth, ME",
+        "name": "CHARLES GAUVIN",
+        "description": "Climate change is the number one threat to wildlife and habitat in Maine. As the state's largest wildlife conservation organization, we must take action to reduce carbon emissions, and installing a solar system is a great way to do it."
+    },
+    {
+        "latlon": [
+            43.3959056,
+            -72.7006518
+        ],
+        "image": "http://cdn2.hubspot.net/hubfs/415283/map-images/townshend-vt.jpg",
+        "location": "Ludlow, VT",
+        "name": "LOUISA CONRAD",
+        "description": "Last month our two trackers generated over 2000 kilowatt hours of power, which is over 80% of our energy use."
+    },
+    {
+        "latlon": [
+            41.8239891,
+            -71.4128343
+        ],
+        "image": "http://cdn2.hubspot.net/hubfs/415283/map-images/providence-ri.jpg",
+        "location": "Providence, RI",
+        "name": "ANTHONY BARO",
+        "description": "Our client wanted their new facility to be powered by renewable energy. The reliability and proven performance of the AllEarth solar tracking system made it an easy choice."
+    },
+    {
+        "latlon": [
+            35.6009498,
+            -82.5540161
+        ],
+        "image": "http://cdn2.hubspot.net/hubfs/415283/map-images/asheville-nc.jpg",
+        "location": "Asheville, NC",
+        "name": "CHARLIE COGGESHALL",
+        "description": "Thanks to our new solar installation, we're able to walk the talk and power our work with clean, renewable solar energy."
+    },
+    {
+        "latlon": [
+            37.27528,
+            -107.8800667
+        ],
+        "image": "http://cdn2.hubspot.net/hubfs/415283/map-images/durango-co.jpg",
+        "location": "Durango, CO",
+        "name": "BEN JASON",
+        "description": "Hill Family Farms has been an organic family farming enterprise for over a decade. Their solar system will provide over 80% of the farm's power for both the family's residence and their irrigation needs. The project is a great example of a local, value-added renewable energy installation."
+    },
+    {
+        "latlon": [
+            38.32902,
+            -122.715133135237
+        ],
+        "image": "http://cdn2.hubspot.net/hubfs/415283/map-images/cotati-ca.jpg",
+        "location": "Cotati, CA",
+        "name": "MARK SOILAND",
+        "description": "The decision to go solar not only made economic sense, but really aligned with Soiland's values. Since the company's inception, we have always strived to be sustainable and environmentally responsible."
+    }
+]

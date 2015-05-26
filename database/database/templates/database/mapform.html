@@ -1,0 +1,41 @@
+<!-- the full page build in jinja2 template in database app -->
+{% extends "database/html5base.html" %}
+
+{% block content %}
+
+<form action="/custom-maps/mapmaker/" method="POST">
+{% csrf_token %}
+Lat:<br>
+<input type="text" name="lat">
+<br>
+Lon:<br>
+<input type="text" name="lon">
+<br>
+Image link:<br>
+<input type="text" name="image">
+<br>
+Location:<br>
+<input type="text" name="location">
+<br>
+Name:<br>
+<input type="text" name="name">
+<br>
+Description:<br>
+<input type="text" name="description">
+<br><br>
+<input type="submit" value="Submit">
+</form>
+
+{% endblock %}
+
+<!-- here is an example of the json data we need -->
+<!-- { -->
+<!-- "latlon": [ -->
+<!-- 41.7167495, -->
+<!-- -75.4921284 -->
+<!-- ], -->
+<!-- "image": "http://cdn2.hubspot.net/hubfs/415283/map-images/union-dale-pa.jpg", -->
+<!-- "location": "Union Dale, PA", -->
+<!-- "name": "THE OAKES FAMILY", -->
+<!-- "description": "We want to produce as much power as we consume, but we needed to limit the impact an array would have on our property and house. Solar trackers were the logical choice to meet our needs." -->
+<!-- }, -->

@@ -1,0 +1,16 @@
+<!-- the full page build in jinja2 template in database app -->
+{% extends "database/html5base.html" %}
+
+{% block content %}
+
+<form action="/custom-maps/mapmaker/" method="POST">
+{% csrf_token %}
+Map HTML:<br>
+<textarea type="text">{{ newmapstring }}</textarea>
+<br><br>
+Slider HTML:<br>
+<textarea type="text">{{ newhtmlstring }}</textarea>
+<!-- <input type="submit" value="Submit"> -->
+</form>
+
+{% endblock %}
