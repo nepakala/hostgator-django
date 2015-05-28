@@ -1,10 +1,39 @@
 <!-- the full page build in jinja2 template in database app -->
 {% extends "mapmaker/html5base.html" %}
 
+  {% block headercss %}
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+  {% endblock %}
+
+  {% block headerjs %}
+  <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+  {% endblock %}
+
 {% block content %}
-
-{{ newhtmlstring|safe }}
-
-{{ newmapstring|safe }}
+<div class="container maprow">
+  <div class="row row-fluid">
+    <div class="col-md-4 span4">
+      <div class="row row-fluid">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner" role="listbox">
+            <!-- BEGIN html from python -->
+            {{ newhtmlstring|safe }}
+            <!-- END html from python -->
+          </div><!-- listbox -->
+        </div><!-- carousel-->
+      </div><!-- row -->
+    </div><!-- col -->
+    <div class="col-md-8 span8">
+      <h1>Tracker Success Stories</h1>
+      <p>Choose a dot below to learn more</p>
+      <!-- BEGIN svg from python -->
+      {{ newmapstring|safe }}
+      <!-- END svg from python -->
+    </div><!-- col -->
+  </div><!-- row -->
+</div><!-- container -->
+<script src="http://cdn2.hubspot.net/hubfs/415283/scripts/maps-on-load-minimal-hardcoded.js"></script>
 
 {% endblock %}

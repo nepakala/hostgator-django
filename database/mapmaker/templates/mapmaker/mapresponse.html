@@ -11,6 +11,20 @@ Map HTML:<br>
 Slider HTML:<br>
 <textarea type="text">{{ newhtmlstring }}</textarea>
 <!-- <input type="submit" value="Submit"> -->
-</form>
 
+<br><br>
+Full HTML:<br>
+<textarea type="text">
+{{ markup.before|safe }}
+            {{ newhtmlstring|safe }}
+{{ markup.inbetween|safe }}
+      {{ newmapstring|safe }}
+{{ markup.after|safe }}
+{{ markup.jscode|safe }}
+</textarea>
+</form>
 {% endblock %}
+
+
+
+

@@ -9,3 +9,7 @@ DirectoryIndex index.fcgi
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteRule ^(.*)$ /index.fcgi/$1 [QSA,NC,L,DPI]
 </IfModule>
+
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+</IfModule>

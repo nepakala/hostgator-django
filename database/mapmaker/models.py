@@ -13,3 +13,12 @@ class City(models.Model):
     # def __str__(self):              # __unicode__ on Python 2
     def __unicode__(self):              # __unicode__ on Python 2
         return self.location
+
+
+# Store the markup surrounding the map
+class Markup(models.Model):
+    before = models.TextField()
+    inbetween = models.TextField()
+    after = models.TextField()
+    jscode = models.TextField()
+    client = models.ForeignKey(User,related_name='markupcode',null=True)

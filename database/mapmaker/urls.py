@@ -6,4 +6,12 @@ urlpatterns = [
     # url(r'^.*$', addLocation.as_view(), name='mapmaker'),
     url(r'^code/$', showCode.as_view(), name='code'),
     url(r'^preview/$', previewMap.as_view(), name='preview'),
+    url(r'^api/(?P<username>[\w]+)/$', mapApi.as_view(), name='api'),
 ]
+
+
+
+
+
+
+
