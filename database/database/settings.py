@@ -36,6 +36,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'mapmaker',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -99,4 +100,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 STATIC_URL = '/static/'
-FORCE_SCRIPT_NAME=""
+STATIC_ROOT = '/home4/newbreed/public_html/tools/static'
+FORCE_SCRIPT_NAME=''

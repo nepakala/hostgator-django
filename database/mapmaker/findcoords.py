@@ -70,8 +70,7 @@ def makeMaps(locations,rawsvg,rawsvgnocoords):
     bestIndexes = []
     
     for i,location in enumerate(locations):
-        coords = location['latlon']
-        print(location['location'])
+        coords = [location.lat,location.lon]
         print(coords)
         mindis = 100000
         bestcoords = [0,0]
@@ -113,12 +112,12 @@ def makeMaps(locations,rawsvg,rawsvgnocoords):
             # print(i)
             # print(bestIndexes.index(i))
             if first:
-                newhtmlstring = newhtmlstring + "<div class=\"item active\" city=\""+locations[bestIndexes.index(i)]['location']+"\">"
+                newhtmlstring = newhtmlstring + "<div class=\"item active\" city=\""+locations[bestIndexes.index(i)].location+"\">"
                 first=False
             else:
-                newhtmlstring = newhtmlstring + "<div class=\"item\" city=\""+locations[bestIndexes.index(i)]['location']+"\">"
+                newhtmlstring = newhtmlstring + "<div class=\"item\" city=\""+locations[bestIndexes.index(i)].location+"\">"
             thisdata = locations[bestIndexes.index(i)]
-            newhtmlstring = newhtmlstring + boilerplate.format(thisdata['image'],thisdata['name'],thisdata['description'])
+            newhtmlstring = newhtmlstring + boilerplate.format(thisdata.imagelink,thisdata.name,thisdata.description)
             newhtmlstring = newhtmlstring + "\n</div>\n"
             
             newmapstring = newmapstring + line.replace("nodata","data") + "\n"

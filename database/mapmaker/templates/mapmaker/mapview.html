@@ -1,0 +1,10 @@
+<!-- the full page build in jinja2 template in database app -->
+{% extends "mapmaker/html5base.html" %}
+
+{% block content %}
+
+{{ newhtmlstring|safe }}
+
+{{ newmapstring|safe }}
+
+{% endblock %}

@@ -15,12 +15,17 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+from django.views.generic.base import RedirectView
 
 import views
+
+from mapmaker import urls as mapurls
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^index/', views.home, name='home'),
-    url(r'^mapmaker/$', views.Mapmaker.as_view(), name='mapmaker'),
+    url(r'^mapmaker/', include(mapurls)),
+    # views.Mapmaker.as_view(), name='mapmaker'),
+    url(r'^$', RedirectView.as_view(url='index/', permanent=False), name='index')
 ]
 
