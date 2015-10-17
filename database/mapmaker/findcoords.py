@@ -97,8 +97,8 @@ def makeMaps(locations,rawsvg,rawsvgnocoords):
     footer = '</svg>\n'
     
     boilerplate = """<img src="{0}" />
-    <h2>{1}<br>{2}</h2>
-    <p>{3}</p>"""
+    <h2>{1}<br>{2}<br>{3}</h2>
+    <p>{4}</p>"""
     
     print('printing out new files')
     
@@ -117,7 +117,7 @@ def makeMaps(locations,rawsvg,rawsvgnocoords):
             else:
                 newhtmlstring = newhtmlstring + "<div class=\"item\" city=\""+locations[bestIndexes.index(i)].location+"\">"
             thisdata = locations[bestIndexes.index(i)]
-            newhtmlstring = newhtmlstring + boilerplate.format(thisdata.imagelink,thisdata.name,thisdata.location,thisdata.description)
+            newhtmlstring = newhtmlstring + boilerplate.format(thisdata.imagelink,thisdata.name,thisdata.company,thisdata.location,thisdata.description)
             newhtmlstring = newhtmlstring + "\n</div>\n"
             
             newmapstring = newmapstring + line.replace("nodata","data") + "\n"
