@@ -22,5 +22,6 @@ class Markup(models.Model):
     after = models.TextField()
     jscode = models.TextField()
     client = models.ForeignKey(User,related_name="markupcode",null=True)
+    version = models.IntegerField(default=1)
     def __unicode__(self):
         return self.client.username

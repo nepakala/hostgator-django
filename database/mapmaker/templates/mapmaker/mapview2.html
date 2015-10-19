@@ -5,6 +5,16 @@
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
 <!-- Magnific Popup core CSS file -->
 <link rel="stylesheet" href="http://tools.newbreedmarketing.com/static/css/magnific-popup.css">
+<style>
+.white-popup-block {
+  background: #FFF;
+  padding: 20px 30px;
+  text-align: left;
+  max-width: 650px;
+  margin: 40px auto;
+  position: relative;
+}
+</style>
   {% endblock %}
 
   {% block headerjs %}
@@ -15,7 +25,8 @@
 
   {% block content %}
 {{ markup.before|safe }}
-{{ newhtmlstring|safe }}
+  {{ newhtmlstring|safe }}
+  <script type="text/javascript">var locations = [{% for location in locations %} {{ location }}, {% endfor %}];</script>  
 {{ markup.inbetween|safe }}
 {{ newmapstring|safe }}
   {{ markup.after|safe }}
